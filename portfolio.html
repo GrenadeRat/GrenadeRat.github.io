@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mr. Nag Rat's Portfolio</title>
+        <style>
+            .topbar {font-family: sans-serif; font-size: 2vw; font-weight: normal;}
+            .header1 {font-family: sans-serif; font-size: 7vw; font-weight: bolder; margin: 40px 175px;}
+            .header2 {font-family: sans-serif; font-size: 3.25vw; font-weight: bold; margin: auto auto;}
+            .header3 {font-family: sans-serif; font-size: 3.25vw; font-weight: bold; text-align: center;}
+            .paragraph {font-family: sans-serif; font-size: 1.5vw; font-weight: normal; text-align: center;}
+            a.landing:link, a.landing:visited, a.landing:hover {color: black; text-decoration: none;}
+            a.linkypooh:link, a.linkypooh:visited {color: black; font-weight: bold; text-decoration: none;}
+            a.linkypooh:hover {color: black; text-decoration: underline;}
+            .booty {display: block;
+                    float: right;
+                    margin-left: 10px;
+                    font-size: 0.5em;
+                    width: auto;
+                    height: auto;
+                    padding: 10px 20px;
+                    border: 1.5px solid black;
+                    border-radius: 15px;
+                    background-color: white;
+                    transition-duration: 0.4s;
+                    cursor: pointer;}
+            .booty:hover {background-color: black;
+                    color: white;}
+
+            /* #imagewrapper {line-height: 0;       
+                    -webkit-column-count: 4;    
+                    -webkit-column-gap: 10px;    
+                    -moz-column-count: 4;
+                    -moz-column-gap: 10px;
+                    column-count: 4;    
+                    column-gap: 10px;}
+            #imagewrapper {display: inline-block;
+                    flex-direction: row;
+                    margin: 0 80px;}
+            #imagewrapper img {width:100%;
+                    height: auto;
+                    margin: 5px 0;} */
+
+            .flex {display: flex;
+                    flex-wrap: wrap;
+                    justify-content: left;}
+
+            .flex > img {width: 100%;
+                    max-width: 25vw;
+                    height: auto;
+                    object-fit: contain;
+                    margin: 10px auto;}
+
+			#page {display: flex;
+                    flex-direction: column;
+                    min-height: 98vh;}
+
+            footer {font-family: sans-serif;
+                    font-size: 1vw; 
+                    text-align: right; 
+                    width: 98vw;
+                    padding-top: 15vh;
+					margin-top: auto;
+					margin-left: auto;
+					margin-right: auto;}
+
+        </style>
+    </head>
+    <body style="background-color: white;">
+        
+		<div id="page">
+			<header>
+				<h1 class="topbar" style="margin: 1.5vh 4vw;">
+					<a class="linkypooh" target="_self" href="index.html" style="font-weight: normal;">GRAT</a>
+					<a class="landing" target="_self" href="contact.html"><button type="button" class="booty">CONTACT</button></a>
+					<a class="landing" target="_self" href="about_me.html"><button type="button" class="booty">ABOUT ME</button></a>
+					<a class="landing" target="_self" href="portfolio.html"><button type="button" class="booty">PORTFOLIO</button></a>
+					<a class="landing" target="_self" href="projects.html"><button type="button" class="booty">PROJECTS</button></a>
+					<a class="landing" target="_self" href="results.html"><button type="button" class="booty">RESULTS</button></a>
+				</h1>
+			</header>
+
+			<main>
+					<h1 class="header1">Portfolio</h1>
+
+					<p class="paragraph">Many cool works by yours truly; are not they they?</p>
+
+					<div class="flex" style="margin: 0 80px">
+					<img src="images/Buzzaxe.jpg" alt="A Wooden Replica of Krieg's Buzzaxe"/>
+					<img src="images/StillLife2Final.jpg" alt="Colored Pencil Drawing of a Stick of RAM"/>
+					<img src="images/StillLife2Sketch.jpg" alt="Sketch of a Stick of RAM"/>
+					<img src="images/StillLife2Ref.jpg" alt="A Stick of RAM"/>
+					<img src="images/StillLife1Final.jpg" alt="Colored Pencil Drawing of My Daily Belt Clip-on Gear"/>
+					<img src="images/StillLife1Sketch.jpg" alt="Sketch of Daily Belt Clip-on Gear"/>
+					<img src="images/StillLife1Ref.JPG" alt="Daily Belt Clip-on Gear"/>
+					<img src="images/RevitaKid2.JPG" alt="Stamp of Revita Kid"/>
+					<img src="images/RevitaKid3.JPG" alt="Stamped Revita Kid"/>
+					<img src="images/RevitaKid1.jpg" alt="Stamp Art of Revita Kid"/>
+					<img src="images/RevitaFinal.JPG" alt="Digital Drawing of a Chest Room in Revita"/>
+					<img src="images/RevitaSketch.jpg" alt="Sketch of a Chest Room in Revita"/>
+					</div>
+			</main>
+
+			<footer>
+					<hr style="border: 1px solid black;">
+					made by <a href="mailto:gratqueries@gmail.com" target="_blank" class="linkypooh">G-Rat</a><br>
+					this page was last updated June 19, 2025
+			</footer>
+		</div>
+
+    </body>
+</html>
