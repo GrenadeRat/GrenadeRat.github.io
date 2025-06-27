@@ -63,6 +63,31 @@
 					margin-left: auto;
 					margin-right: auto;}
 
+			.modal {visibility: hidden; /* Hidden by default */
+                    position: fixed; /* Stay in place */
+                    z-index: 0; /* Sit on top */
+                    padding: 0; /* Location of the box */
+                    left: 0;
+                    top: 0;
+                    width: 100vw; /* Full width */
+                    height: 100vh; /* Full height */
+                    background-color: rgb(0,0,0); /* Fallback color */
+                    background-color: rgba(0,0,0,0.75); /* Black w/ opacity */
+                    opacity: 0;
+                    transition: visibility 0s, opacity 0.2s linear;
+                    cursor: pointer}
+
+            .modal-content {margin: auto;
+                    text-align: center;}
+
+            .modal-image {display: inline-block;
+                    max-width: 100vw;
+                    max-height: 100vh;
+                    width: auto;
+                    height: auto;}
+
+            .art {cursor: pointer;}
+
         </style>
     </head>
     <body style="background-color: white;">
@@ -80,24 +105,34 @@
 			</header>
 
 			<main>
-					<h1 class="header1">Portfolio</h1>
+				<h1 class="header1">Portfolio</h1>
 
 <!-- 					<p class="paragraph">Many cool works by yours truly; are not they they?</p> -->
 
-					<div class="flex" style="margin: 0 80px">
-					<img src="images/Buzzaxe.jpg" alt="A Wooden Replica of Krieg's Buzzaxe"/>
-					<img src="images/StillLife2Final.jpg" alt="Colored Pencil Drawing of a Stick of RAM"/>
-					<img src="images/StillLife2Sketch.jpg" alt="Sketch of a Stick of RAM"/>
-					<img src="images/StillLife2Ref.jpg" alt="A Stick of RAM"/>
-					<img src="images/StillLife1Final.jpg" alt="Colored Pencil Drawing of My Daily Belt Clip-on Gear"/>
-					<img src="images/StillLife1Sketch.jpg" alt="Sketch of Daily Belt Clip-on Gear"/>
-					<img src="images/StillLife1Ref.JPG" alt="Daily Belt Clip-on Gear"/>
-					<img src="images/RevitaKid2.JPG" alt="Stamp of Revita Kid"/>
-					<img src="images/RevitaKid3.JPG" alt="Stamped Revita Kid"/>
-					<img src="images/RevitaKid1.jpg" alt="Stamp Art of Revita Kid"/>
-					<img src="images/RevitaFinal.JPG" alt="Digital Drawing of a Chest Room in Revita"/>
-					<img src="images/RevitaSketch.jpg" alt="Sketch of a Chest Room in Revita"/>
-					</div>
+				<div class="flex" style="margin: 0 80px">
+					<img onclick="enhance(this)" class="art" src="images/Buzzaxe.jpg" alt="A Wooden Replica of Krieg's Buzzaxe"/>
+					<img onclick="enhance(this)" class="art" src="images/StillLife2Final.jpg" alt="Colored Pencil Drawing of a Stick of RAM"/>
+					<img onclick="enhance(this)" class="art" src="images/StillLife2Sketch.jpg" alt="Sketch of a Stick of RAM"/>
+					<img onclick="enhance(this)" class="art" src="images/StillLife2Ref.jpg" alt="A Stick of RAM"/>
+					<img onclick="enhance(this)" class="art" src="images/StillLife1Final.jpg" alt="Colored Pencil Drawing of My Daily Belt Clip-on Gear"/>
+					<img onclick="enhance(this)" class="art" src="images/StillLife1Sketch.jpg" alt="Sketch of Daily Belt Clip-on Gear"/>
+					<img onclick="enhance(this)" class="art" src="images/StillLife1Ref.JPG" alt="Daily Belt Clip-on Gear"/>
+					<img onclick="enhance(this)" class="art" src="images/RevitaKid2.JPG" alt="Stamp of Revita Kid"/>
+					<img onclick="enhance(this)" class="art" src="images/RevitaKid3.JPG" alt="Stamped Revita Kid"/>
+					<img onclick="enhance(this)" class="art" src="images/RevitaKid1.jpg" alt="Stamp Art of Revita Kid"/>
+					<img onclick="enhance(this)" class="art" src="images/RevitaFinal.JPG" alt="Digital Drawing of a Chest Room in Revita"/>
+					<img onclick="enhance(this)" class="art" src="images/RevitaSketch.jpg" alt="Sketch of a Chest Room in Revita"/>
+				</div>
+
+				<div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <!-- <span class="close">&times;</span> -->
+                        <img src="" id="modal-image" class="modal-image"/>
+                    </div>
+                </div>
+
+                <script src="image_shower.js"></script>
+				
 			</main>
 
 			<footer>
