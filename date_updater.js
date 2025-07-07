@@ -20,5 +20,5 @@ xhttp.onreadystatechange = function()
     });
   }
 };
-xhttp.open("GET", "https://api.github.com/users/grenaderat/repos", true);
+xhttp.open("GET", "https://api.github.com/users/GrenadeRat/repos", true);
 xhttp.send();
