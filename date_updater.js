@@ -1,4 +1,4 @@
-const desiredRepo = "GrenadeRat.github.io";
+const desiredRepo = "grenaderat.github.io";
 const dateTagClass = ".date";
 
 var xhttp = new XMLHttpRequest();
@@ -20,5 +20,5 @@ xhttp.onreadystatechange = function()
     });
   }
 };
-xhttp.open("GET", "https://api.github.com/users/GrenadeRat/repos", true);
+xhttp.open("GET", "https://api.github.com/users/grenaderat/repos", true);
 xhttp.send();
